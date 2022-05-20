@@ -2,11 +2,10 @@ const bookStore = {
     location: "Seattle",
     address:'333 st ne Seattle wa 99999',
     number: 9999999999,
-    name: 'Coding Books',
+    name: 'Easley\'s Technical Books',
     hours: 'Monday - Friday 9am - 6pm',
     inventory: [
         {
-            id:1,
             title: 'Eloquent JavaScript: A Modern Introduction to Programming',
             author: 'Marjin Haverbeke',
             price: 10.00,
@@ -16,7 +15,6 @@ const bookStore = {
             
         },
         {
-            id:2,
             title: 'JavaScript & JQuery: Interactive Front-End Web Development',
             author: 'Jon Duckett',
             price: 45.75,
@@ -25,7 +23,6 @@ const bookStore = {
             imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31SRWF+LkKL._SX398_BO1,204,203,200_.jpg'
         },
         {
-            id:3,
             title: 'JavaScript: The Good Parts',
             author: 'Douglas Crockford',
             price: 36.00,
@@ -34,7 +31,6 @@ const bookStore = {
             imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/5131OWtQRaL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg',
         },
         {
-            id:4,
             title: 'JavaScript: The Definitive Guide',
             author: 'David Flanagan',
             price: 25.50,
@@ -44,7 +40,6 @@ const bookStore = {
             
         },
         {
-            id:5,
             title: 'You Don’t Know JS',
             author: 'Kyle Simpson',
             price: 6.00,
@@ -53,7 +48,6 @@ const bookStore = {
             imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/41T5H8u7fUL._SX331_BO1,204,203,200_.jpg'
         }, 
         {
-            id:6,
             title: 'Learn Enough JavaScript to Be Dangerous',
             author: 'Michael Hartl',
             price: 24.00,
@@ -63,7 +57,6 @@ const bookStore = {
 
         },
         {
-            id:7,
             title: 'Cracking the Coding Interview',
             author: 'Gayle Laakmann McDowell',
             price: 49.95,
