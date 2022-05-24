@@ -1,10 +1,16 @@
+
+
 //Build header
-document.querySelector('h1').textContent = bookStore.name
+const renderHeader = (bookStore) => {
+    document.querySelector('h1').textContent = bookStore.name
+}
 
 //Build footer
-document.querySelector('footer div').textContent = bookStore.name
-document.getElementById('address').textContent = bookStore.address
-document.querySelectorAll('footer div')[2].textContent = bookStore.hours
+const renderFooter = (bookStore) => {
+    document.querySelector('footer div').textContent = bookStore.name
+    document.getElementById('address').textContent = bookStore.address
+    document.querySelectorAll('footer div')[2].textContent = bookStore.hours
+}
 //Clear book list
 document.querySelector('#book-list li').remove()
 //render one book
@@ -47,5 +53,24 @@ document.querySelector('#book-form').addEventListener('submit',(e)=>{
     renderOneBook(book)
 })
 
-//Build book list
-bookStore.inventory.forEach(renderOneBook)
+const getStore = () => {
+    fetch('http://localhost:3000/stores/1')
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(data)
+        renderHeader(data)
+        renderFooter(data)
+    })
+    
+}
+const getBooks = () => {
+    fetch('http://localhost:3000/books')
+    .then(res => res.json())
+    .then(inventory => {
+        console.log(inventory)
+        inventory.forEach(renderOneBook)
+    })
+}
+getBooks()
+getStore()
+

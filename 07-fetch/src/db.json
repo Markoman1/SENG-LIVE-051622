@@ -1,14 +1,31 @@
-{"store_info" : 
+{"stores" : 
     [
     {
+       "id":1,
         "location":"Seattle",
         "address":"333 st ne Seattle wa 99999",
         "number":9999999999,
         "name":"Easley's Technical Books",
         "hours":"Monday - Friday 9am - 6pm"
-    }
+    },
+    {
+       "id":2,
+      "location":"New York",
+      "address":"555 pl sw NY 10099",
+      "number":1110009999,
+      "name":"Coding Books and more!",
+      "hours":"Monday - Friday 10am - 9pm"
+  },
+  {
+   "id":3,
+   "location":"Los Angeles",
+   "address":"2525 drive Los Angeles CA 90002",
+   "number":5554443333,
+   "name":"Tech BooksRus",
+   "hours":"Thursday - Saturday 11am - 7pm"
+}
 ],
-"inventory":[
+"books":[
        {
           "id":1,
           "title":"Eloquent JavaScript: A Modern Introduction to Programming",
